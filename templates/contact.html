@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Blood Donation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #d9534f;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+        nav {
+            background-color: #d9534f;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/donate">Donate</a>
+        <a href="/request">Request</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>BLOOD DONATION</h1>
+        <h2>A Small Seed for a Life</h2>
+
+        <h3>Contact Us</h3>
+        <p><strong>Blood Bank related queries, feedback and suggestions</strong></p>
+        <p>Center for Development of Advanced Computing<br>
+        C-54/1, Hanamkonda, Warangal</p>
+        <p>📞 8121349857</p>
+        <p>📧 blooddonation@gmail.com</p>
+
+        <h3>For Administrative Queries</h3>
+        <p>Blood Cell, National Health Mission<br>
+        Ministry Of Health & Family Welfare, New Delhi - 110011</p>
+    </div>
+
+    <div class="footer">
+        © Copyrights 2014 - Sanjana
+    </div>
+</body>
+</html>

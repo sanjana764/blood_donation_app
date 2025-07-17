@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Blood Donation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #d9534f;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+        nav {
+            background-color: #d9534f;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/donate">Donate</a>
+        <a href="/request">Request</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/about">About</a>
+    </nav>
+
+    <div class="container">
+        <h1>BLOOD DONATION</h1>
+        <h2>A Small Seed for a Life</h2>
+
+        <h3>About Us</h3>
+        <p>Welcome to the Blood Donation website. We aim to ensure the availability of safe and quality blood and blood components round the clock and throughout the year. This helps alleviate human suffering, even in remote areas.</p>
+    </div>
+
+    <div class="footer">
+        © Copyrights 2014 - Sanjana
+    </div>
+</body>
+</html>

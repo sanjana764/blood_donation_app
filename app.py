@@ -79,6 +79,13 @@ def req_donor():
         return render_template("request.html", det=matching_donors)
 
     return render_template("request.html")
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
