@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------------------------------------Linking In My Project-------------------------------------------->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&family=Nova+Square&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Blood Donation</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='drop2.png') }}">
+</head>
+<body>
+    <div class="main_box">
+        
+        <!-------------------------------------------Creating Hamburger Button------------------------------------------------>
+        <input type="checkbox" id="check">
+        <div class="first_button">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i> 
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BLOOD DONATION</h1>
+            <h6 style="margin-left: 22.5em; color: rgb(255, 233, 233); -webkit-text-stroke: 0.25px black; font-size: 1.5rem;">a small seed for a life</h6>
+        </div>
+        <!--------------------------------------------Content of webpage-------------------------------------------------->
+        <div class="content2">
+            <img src="https://www.eraktkosh.in/BLDAHIMS/bloodbank/transactions/assets/webp/withoutytp_New2022-Photoroom.png" alt="blood donation day">
+            <img src="https://t3.ftcdn.net/jpg/04/87/55/66/360_F_487556637_8m5i9zo19NUK06hR82MoIKavJfHLRgi0.jpg" alt="">
+            <img src="https://c8.alamy.com/comp/2RHDDFH/blood-donation-background-hand-give-tear-of-blood-2RHDDFH.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <div class="box box1">
+                <h1 style="color: rgb(169, 0, 0);">Aim and Objective</h1>
+                <hr> <br>
+                <img src="{{ url_for('static', filename='bd1.png') }}" style="border-radius: 10px; width: 350px;" alt="img">
+                <br><br>
+                <p>The main aim of voluntary blood donation is to ensure the availability of safe and quality blood and blood components round the clock and throughout the year. This helps alleviate human suffering, even in remote areas.
+                    <br><br>The major objectives are:<br>
+                    <ul style="margin-left: 10px;">
+                        <li>To wipe out the scarcity of blood and ensure its availability</li>
+                        <li>To inculcate the values of caring for others and responsible citizenship among the donors</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="box box2"><img src="{{ url_for('static', filename='bd3.png') }}" alt="pitch" style="height: 150px; width: 790px; padding: 10px; overflow:hidden;"></div>
+
+            <div class="box box5">
+                <h2 style="color: rgb(101, 1, 1);">Blood donation</h2>
+                <hr> <br>
+                <div class="con1">
+                    <div><img src="{{ url_for('static', filename='bd2.png') }}" style="border-radius: 10px; width: 300px;" alt="img"></div>
+                    <div>
+                        <p>The key benefits of blood donation include:</p>
+                        <ul style="margin-left: 2rem;">
+                            <li>Saving lives by providing essential blood and blood components</li>
+                            <li>Inculcating values of altruism, social responsibility and healthy lifestyle among donors</li>
+                            <li>Donors get a sense of personal satisfaction, self-esteem and pride</li>
+                            <li>health benefits as donors are screened for health conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy">
+            &copy; Copyrights 2014 &nbsp;&nbsp;&nbsp;-srinath sports interests ltd
+        </div>
+        <!------------------------------------------Creating SideBar Menu-------------------------------------------->
+        <div class="sidebar">
+            <div class="logo">
+                <a href="$">BLOOD DONATION 
+                </a>
+            </div>
+
+            <!----------------------------------------Creating Closing Button-------------------------------------->
+            <div class="second_button">
+                <label for="check">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </label>
+            </div>
+
+            <!------------------------------------------Menu Items------------------------------------------>
+            <div class="menu">
+                <ul>
+                    <li> <a href="/"><i class="fa-solid fa-house-chimney"></i>Home</a> </li>
+                    <li> <a href="/donate"><i class="fa-solid fa-hand-holding-medical"></i>Donate</a> </li>
+                    <li> <a href="/request"><i class="fa-solid fa-hands-holding-child"></i>Request</a> </li>
+                    <li> <a href="$"><i class="fa-solid fa-phone"></i>Contact us</a> </li>
+                    <li> <a href="$"><i class="fa-solid fa-circle-info"></i>About </a> </li>
+                </ul>
+            </div>
+
+            <!-----------------------------------------------Footer : Contacts------------------------------------------>
+            <div class="social_panel">
+                <ul>
+                    <a href="$"><i class="fa-brands fa-meta"></i></a>&nbsp; &#124;
+                    <a href="$"><i class="fa-brands fa-x-twitter"></i></a>&nbsp; &#124;
+                    <a href="$"><i class="fa-brands fa-youtube"></i></a>&nbsp; &#124;
+                    <a href="$"><i class="fa-brands fa-instagram"></i></a>&nbsp;
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>

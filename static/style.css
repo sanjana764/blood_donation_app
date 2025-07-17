@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("bg2.png");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.main_box {
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.3s 0.1ms ease-in-out;
+}
+
+.first_button i {
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top:0.25rem;
+    left: 0.85rem;
+    line-height: 3rem;
+    cursor: pointer;
+    transition: all 0.15s 0ms linear;
+}
+
+.sidebar {
+    position: fixed;
+    top:0.25rem;
+    left: -65%;
+    height: 96vh;
+    width: 60%;
+    background-color: lightpink;
+    border-top-right-radius: 0.65rem;
+    border-bottom-right-radius: 0.65rem;
+    background-color: rgba(200, 255, 200, 0.25);
+    box-shadow: 0.65rem -0.65rem 0.75rem rgba(0, 32, 0, 0.5);
+    transition: all 0.3s linear;
+}
+
+.sidebar > .logo {
+    position: absolute;
+    line-height: 2rem;
+    height: 10%;
+    width: 100%;
+    box-shadow: 0px 0px 1.2rem rgba(32, 0, 0, 0.85);
+}
+
+.sidebar > .logo > a {
+    position: absolute;
+    top: 1rem;
+    left: 1.16rem;
+    letter-spacing: 5px;
+    font-family: 'Kaushan Script';
+    font-size: 2.5em;
+    font-weight: 900;
+    text-shadow: 5px 0px 7.5px rgba(0, 0, 0, 0.75);
+    color: rgb(175, 0, 0);
+    text-decoration: none;
+} 
+
+.sidebar > .second_button i {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 2em;
+    color: rgba(255, 0, 0, 0.45);
+    position: absolute;
+    right: 0.5em;
+    cursor: pointer;
+    transition: all 0.2s 0ms linear;
+}
+
+.sidebar > .menu {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+}
+
+.sidebar > .menu li {
+    margin-top: 5px;
+    padding: 15px 20px;
+    transition: all 0.2s linear;
+}
+
+.sidebar > .menu a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.sidebar > .menu i {
+    padding-right: 1.5em;
+}
+
+.sidebar > .social_panel {
+    position: absolute;
+    left: 25%;
+    bottom: 25px;
+}
+
+.sidebar > .social_panel a i {
+    font-size: 1.35rem;
+    color: black;
+    opacity: 0.65;
+    padding: 5px 0px;
+    transition: all 0.1s 0ms linear;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar > .menu li:hover {
+    border: 1.15px solid black;
+    text-decoration: underline;
+    background-color: #ffffff69;
+    border-radius: 5px;
+    box-shadow: -5px 5.35px 10px rgba(0, 32, 0, 0.75);
+    transform: scaleY(1.125);
+}
+
+.first_button i:hover {
+    font-size: 36px;
+    text-shadow: -7px 5px 8px black;
+}
+
+.second_button i:hover {
+    font-size: 1.45em;
+    color: maroon;
+    text-shadow: -7px 5px 12.5px rgba(0, 0, 0, 0.45);
+}
+
+.sidebar > .social_panel a i:hover {
+    opacity: 1;
+    font-size: 28px;
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+
+#check:checked ~ .title{
+    filter: blur(10px);
+}
+
+#check:checked ~ .content{
+    filter: blur(2.5px);
+}
+
+#check:checked ~ .first_button {
+    opacity: 0;
+}
+
+.copy {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    height: 1.5rem;
+    padding-left: 3rem;
+    background-color: rgba(128, 0, 0, 0.75);
+    backdrop-filter: blur(25px);
+    border-top: 2px solid rgba(255, 200, 200, 0.45);
+    color: white;
+    font-family: 'Courier New';
+    font-weight: 400;
+}
+
+.title {
+    padding: 1rem;
+    background-color: rgba(256, 256, 256, 0.15);
+    border-bottom-left-radius:  1.5rem;
+    border-bottom-right-radius:  1.5rem;
+    box-shadow: -15px 15px 55px black;
+    text-align: center;
+    text-shadow: -5px 7.5px 10px rgba(0, 0, 0, 0.85);
+    font-size: 300%;
+    -webkit-text-stroke: 1px white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgb(200, 25, 0);
+    transition: all 0.3s 0.1ms linear;
+}
+
+.content2 {
+    margin: 2.5rem 0rem;
+    border: 2rem double rgba(245, 245, 245, 0.35);
+    backdrop-filter: blur(2rem);
+    border-radius: 2.5rem;
+    height: 45%;
+    width: 95.5vw;
+    
+}
+
+.content2 img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: imagefade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+}
+
+@keyframes imagefade {
+    0% {
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    92% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.content2 img:nth-of-type(1) {
+    animation-delay: 6s;
+}
+.content2 img:nth-of-type(2) {
+    animation-delay: 4s;
+}
+.content2 img:nth-of-type(3) {
+    animation-delay: 2s;
+}
+.content2 img:nth-of-type(4) {
+    animation-delay: 0;
+}
+
+.content {
+    margin: 1rem auto;
+    width: 85vw;
+    height: 584px;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.box1 {
+    background-color: #f7b3b370;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    border: 2px outset rgba(255, 255, 255, 0.65);
+    transition: all 240ms 0ms ease-in-out;
+}
+
+.box2 {
+    background-color: rgba(106, 142, 35, 0.25);
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(5px);
+    border: 2px outset rgba(255, 255, 255, 0.65);
+    transition: all 240ms 0ms ease-in-out;
+}
+
+.box5 {
+    background-color: rgba(218, 165, 32, 0.35);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    border: 2px inset rgba(255, 255, 255, 0.65);
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms 0ms ease-in-out;
+}
+
+.con1{
+    display: flex;
+}
+
+
+.box:hover {
+    transform: scale(1.025);
+}
