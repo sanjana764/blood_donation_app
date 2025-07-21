@@ -191,16 +191,40 @@
     .main {
         flex-direction: column;
         padding: 10px;
+        position: static;
     }
 
-    .details, .images {
+    .details {
         width: 100%;
+        margin: 0;
         padding: 10px 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .images {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
     }
 
     .images img {
-        width: 100%;
+        width: 80vw;
+        max-width: 300px;
         height: auto;
+        position: static;
+        top: 0;
+        right: 0;
+        border-radius: 20px;
+        transform: none;
     }
 
     h1 {
