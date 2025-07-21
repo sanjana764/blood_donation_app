@@ -186,4 +186,28 @@
     text-shadow: -3px 2.5px 5px rgba(0, 0, 0, 0.34);
     cursor: pointer;
   }
+
+  @media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .details, .images {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
   
+

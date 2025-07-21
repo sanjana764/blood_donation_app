@@ -296,3 +296,74 @@ body {
 .box:hover {
     transform: scale(1.025);
 }
+@media (max-width: 768px) {
+  .main_box {
+    width: 100vw;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 80%;
+    left: -100%;
+  }
+
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+
+  .sidebar > .logo > a {
+    font-size: 1.5em;
+    left: 1rem;
+  }
+
+  .sidebar > .menu a {
+    font-size: 1rem;
+  }
+
+  .sidebar > .social_panel {
+    left: 15%;
+  }
+
+  .title {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .box1, .box2, .box5 {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .box1, .box5 {
+    margin-bottom: 1rem;
+  }
+
+  .content2 {
+    width: 100%;
+    margin: 1.5rem 0;
+    border: 1rem double rgba(245, 245, 245, 0.35);
+  }
+
+  .content2 img {
+    height: auto;
+    position: relative;
+  }
+
+  .first_button i {
+    font-size: 1.75rem;
+    left: 0.5rem;
+  }
+
+  .copy {
+    font-size: 0.85rem;
+    padding-left: 0;
+  }
+}
